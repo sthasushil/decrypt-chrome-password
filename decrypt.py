@@ -33,8 +33,8 @@ def display_credentials(url, username, decrypted_password):
  
 if __name__ == '__main__':
     parser = argparse.ArgumentParser(description="Retrieve Chrome credentials.")
-    parser.add_argument("-f", "--file", help="Path to the Chrome login data.", required=True)
-    parser.add_argument("-k", "--key", help="Path to the master key file.", required=True)
+    parser.add_argument("-f", "--file", help="Path to the Chrome login data.", default="Login Data")
+    parser.add_argument("-k", "--key", help="Path to the master key file.", default="master_key.txt")
      
     args = parser.parse_args()
  
